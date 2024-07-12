@@ -1,7 +1,7 @@
 def is_perfect(number):
     x = 1
     s = 0
-    while x <= number/2:
+    while x <= number / 2:
         if number % x == 0:
             s = s + x
         x = x + 1

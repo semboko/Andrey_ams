@@ -8,7 +8,7 @@ def is_prime(number):
 
 
 n = 2
-while (n < 1000):
+while n < 1000:
     if is_prime(n):
         print(n)
     n = n + 1

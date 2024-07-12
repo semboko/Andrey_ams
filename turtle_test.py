@@ -16,7 +16,7 @@ def draw_nshape(x, y, corners):
     turtle.begin_fill()
     while counter < corners:
         turtle.forward(100)
-        turtle.left(360/corners)
+        turtle.left(360 / corners)
         counter += 1
     turtle.end_fill()
 
