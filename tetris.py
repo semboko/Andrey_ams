@@ -7,6 +7,7 @@ clock = pygame.time.Clock()
 
 
 info_font = pygame.font.Font("./assets/pixelify.ttf", 40)
+game_over_img = pygame.image.load("assets/game_over.png")
 
 
 lshape = (
@@ -208,6 +209,10 @@ while True:
     main_surface.blit(game_surface, (10, 10))
     main_surface.blit(info_surface, (350, 10))
     main_surface.blit(new_shape_surface, (350, 220))
+
+    if game_over:
+        main_surface.blit(game_over_img, (0, 0))
+
     pygame.display.update()
 
     if frame_counter == 40 and not game_over:
